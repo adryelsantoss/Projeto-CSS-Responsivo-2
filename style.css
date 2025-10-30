@@ -7,6 +7,7 @@
 
 header {
     margin: 35px 0 0 40px;
+    position: relative;
 }
 
 .menu-header {
@@ -41,7 +42,7 @@ header {
 
 section {
     display: inline-block;
-    margin: 200px 0 0 85px;
+    margin: 150px 0 0 100px;
     position: absolute;
 }
 
@@ -93,16 +94,46 @@ p {
     opacity: 0.4;
 }
 
+div {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+}
+
+.img-br {
+    width: 22px;
+    cursor: pointer;
+}
+
+.img-usa {
+    width: 20px;
+    cursor: pointer;
+}
+
+.img-br:hover,
+.img-usa:hover {
+    opacity: 0.5;
+}
+
+.img-br:active,
+.img-usa:active {
+    opacity: 0.8;
+}
+
 @media screen and (max-width:900px) {
     section {
-        width: 100%;
-        height: 50%;
-        margin: 0;
-        padding: 0;
+        position: static;
+        display: block;
+        width: 95%;
+        margin: 60px auto 0;
+        text-align: center;
     }
 
     header {
-        margin: 20px 0 0 47px;
+        margin: 20px 20px 0 47px;
+        text-align: auto;
     }
 
     h1 {
@@ -112,50 +143,54 @@ p {
         color: #161A49;
         width: 278px;
         text-align: center;
-        margin: 76px auto 0;
+        margin: 0 auto;
     }
 
     p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 33px;
         width: 304px;
-        margin: 47px auto 26px;
+        height: 130px;
+        margin: 40px auto;
         text-align: center;
     }
+
     .image-logo {
-        width: 312px;
-        height: 288px;
-        bottom: 0;
-        margin: 59px 39px 26px;
+        width: 80%;
+        max-width: 320px;
+        height: auto;
+        bottom: 10%;
+        margin: 50px 50px 0px;
         display: inline-block;
-        position: absolute;    
+        position: absolute;
+
     }
 
     .menu-header {
         display: none;
     }
-    .menu-button {
-        width: 124px;
-        height: 51px;
-        border-radius: 6px;
-        border-width: 1px;
-        background: #6FBF44;
-        border: 1px solid #4CB538;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #FFFFFF;
-        cursor: pointer;
-        margin-left: 210px;
-    }
-    
+
     .link-section {
+        display: inline-block;
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
         color: #6FBF44;
         cursor: pointer;
-        margin-left: 150px;
+        margin: 0 auto;
+    }
+
+    div {
+        top: -10px;
+        right: 10px;
+    }
+
+    .img-br {
+        width: 30px;
+    }
+
+    .img-usa {
+        width: 28px;
     }
 }
